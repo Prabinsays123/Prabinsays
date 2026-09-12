@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabin Sharma — Prabinsays</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="spider" id="spider" role="button" tabindex="0" aria-label="A small spider, click it">
+  <svg viewBox="0 0 60 60">
+    <g stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <line x1="30" y1="26" x2="10" y2="10"/>
+      <line x1="30" y1="26" x2="6" y2="24"/>
+      <line x1="30" y1="26" x2="10" y2="40"/>
+      <line x1="30" y1="26" x2="16" y2="50"/>
+      <line x1="30" y1="34" x2="50" y2="10"/>
+      <line x1="30" y1="34" x2="54" y2="24"/>
+      <line x1="30" y1="34" x2="50" y2="40"/>
+      <line x1="30" y1="34" x2="44" y2="50"/>
+    </g>
+    <ellipse cx="30" cy="24" rx="7" ry="6" fill="currentColor"/>
+    <ellipse cx="30" cy="36" rx="10" ry="9" fill="currentColor"/>
+  </svg>
+</div>
+
+<header class="hero" id="top">
+  <svg class="web-corner web-corner--tl" viewBox="0 0 200 200" aria-hidden="true">
+    <path d="M0,0 L200,80 M0,0 L140,200 M0,0 L60,200 M0,0 L200,20" stroke="currentColor" stroke-width="1" fill="none"/>
+    <path d="M0,30 Q60,40 90,90 M0,70 Q70,80 100,130 M0,110 Q60,120 80,160" stroke="currentColor" stroke-width="1" fill="none"/>
+  </svg>
+  <svg class="web-corner web-corner--br" viewBox="0 0 200 200" aria-hidden="true">
+    <path d="M200,200 L0,120 M200,200 L60,0 M200,200 L140,0 M200,200 L0,180" stroke="currentColor" stroke-width="1" fill="none"/>
+    <path d="M200,170 Q140,160 110,110 M200,130 Q130,120 100,70 M200,90 Q140,80 120,40" stroke="currentColor" stroke-width="1" fill="none"/>
+  </svg>
+
+  <nav class="site-nav">
+    <span class="site-nav__mark">Prabin<span class="site-nav__mark-accent">Sharma</span></span>
+    <div class="site-nav__links" id="nav-links">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#game" data-nav>Play</a>
+      <a href="#contact" data-nav>Contact</a>
+      <span class="site-nav__indicator" id="nav-indicator"></span>
+    </div>
+  </nav>
+
+  <div class="hero__content">
+    <h1 class="hero__name">Prabin Sharma</h1>
+    <p class="hero__handle">@prabinsays</p>
+    <p class="hero__typed"><span id="typed-text"></span><span class="typed-cursor">_</span></p>
+    <p class="hero__lede">Front-end fundamentals in HTML, CSS and JavaScript, with Python and C in progress. I like building things that actually work, then making them better.</p>
+    <div class="hero__actions">
+      <a class="button button--primary" href="#projects">View projects</a>
+      <a class="button button--ghost" href="#game">Play Web Crawl</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" id="about">
+    <div class="section__inner section__inner--split">
+      <div class="section__text">
+        <h2><span class="thread-rule" aria-hidden="true"></span>About</h2>
+        <p>I build things with code — mostly small pages, small tools, and small games, one of which is sitting a few sections below this one. I like the process more than the finished product: figuring out why something is broken, then watching it work.</p>
+        <p>Currently pursuing a BSc in CSIT, after finishing +2. Comfortable with HTML, CSS and JavaScript, and actively building up Python and C.</p>
+      </div>
+      <div class="section__figure" aria-hidden="true">
+        <svg viewBox="0 0 220 220" class="code-web-figure">
+          <text x="20" y="100" class="code-bracket">&lt;/&gt;</text>
+          <line x1="150" y1="60" x2="150" y2="110" stroke="var(--steel-500)" stroke-width="1.5"/>
+          <g transform="translate(150,120)">
+            <g stroke="var(--crimson-600)" stroke-width="1.6" fill="none" stroke-linecap="round">
+              <line x1="0" y1="0" x2="-14" y2="-10"/>
+              <line x1="0" y1="0" x2="-16" y2="2"/>
+              <line x1="0" y1="0" x2="-10" y2="14"/>
+              <line x1="0" y1="4" x2="14" y2="-8"/>
+              <line x1="0" y1="4" x2="16" y2="4"/>
+              <line x1="0" y1="4" x2="12" y2="16"/>
+            </g>
+            <ellipse cx="0" cy="-2" rx="5" ry="4.5" fill="var(--crimson-600)"/>
+            <ellipse cx="0" cy="8" rx="7.5" ry="6.5" fill="var(--crimson-600)"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tinted" id="skills">
+    <div class="section__inner">
+      <h2><span class="thread-rule" aria-hidden="true"></span>What I work with</h2>
+      <div class="skill-web" id="skill-web">
+        <svg class="skill-web__line" viewBox="0 0 900 4" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="0" y1="2" x2="900" y2="2" stroke="var(--steel-500)" stroke-width="2" stroke-dasharray="900" stroke-dashoffset="900"/>
+        </svg>
+        <div class="skill-node" data-level="comfortable">
+          <span class="skill-node__dot"></span>
+          <p class="skill-node__name">HTML</p>
+          <p class="skill-node__level">Comfortable</p>
+        </div>
+        <div class="skill-node" data-level="comfortable">
+          <span class="skill-node__dot"></span>
+          <p class="skill-node__name">CSS</p>
+          <p class="skill-node__level">Comfortable</p>
+        </div>
+        <div class="skill-node" data-level="comfortable">
+          <span class="skill-node__dot"></span>
+          <p class="skill-node__name">JavaScript</p>
+          <p class="skill-node__level">Comfortable</p>
+        </div>
+        <div class="skill-node" data-level="learning">
+          <span class="skill-node__dot"></span>
+          <p class="skill-node__name">Python</p>
+          <p class="skill-node__level">Learning</p>
+        </div>
+        <div class="skill-node" data-level="learning">
+          <span class="skill-node__dot"></span>
+          <p class="skill-node__name">C</p>
+          <p class="skill-node__level">Learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <h2><span class="thread-rule" aria-hidden="true"></span>Projects</h2>
+      <div class="project-grid" id="project-grid">
+        <!-- rendered by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tinted" id="game">
+    <div class="section__inner section__inner--narrow">
+      <h2><span class="thread-rule" aria-hidden="true"></span>Web Crawl</h2>
+      <p class="section__lead">Guide the spider along its web to catch flies. Avoid the walls and its own thread.</p>
+
+      <div class="game">
+        <div class="game__hud">
+          <div class="game__score">
+            <span class="game__score-label">Score</span>
+            <span class="game__score-value" id="score">0</span>
+          </div>
+          <div class="game__score game__score--best">
+            <span class="game__score-label">Best</span>
+            <span class="game__score-value" id="best-score">0</span>
+          </div>
+        </div>
+
+        <div class="game__board-wrap">
+          <canvas id="game-board" width="400" height="400"></canvas>
+          <div class="game__overlay" id="game-overlay">
+            <p class="game__overlay-title" id="overlay-title">Ready?</p>
+            <p class="game__overlay-text" id="overlay-text">Arrow keys or WASD. On touch devices, use the controls below.</p>
+            <button class="button button--primary" id="game-start-btn">Start crawling</button>
+          </div>
+        </div>
+
+        <div class="game__touch-controls">
+          <button class="game__pad" data-dir="up" aria-label="Move up">↑</button>
+          <div class="game__pad-row">
+            <button class="game__pad" data-dir="left" aria-label="Move left">←</button>
+            <button class="game__pad" data-dir="down" aria-label="Move down">↓</button>
+            <button class="game__pad" data-dir="right" aria-label="Move right">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section__inner section__inner--narrow section__inner--center">
+      <h2><span class="thread-rule thread-rule--center" aria-hidden="true"></span>Contact</h2>
+      <p class="section__lead">Open to opportunities, collaborations, or a good conversation about code.</p>
+      <div class="contact-links">
+        <a href="mailto:Prabinsays@gmail.com">Prabinsays@gmail.com</a>
+        <a href="https://github.com/prabinsays123" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a href="#top">Back to top</a>
+  <span>© 2026 Prabin Sharma — built with HTML, CSS &amp; JavaScript.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
